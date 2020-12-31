@@ -3,8 +3,7 @@
 ## Sara Strasner
 
 ## UML
-Provide a UML diagram showcasing the architecture of your API
-Document the data and program flow for your API, including the mapping of Routes and Functions, as well as the flow of data.
+![UML](./assets/Serverless-API-UML.png)
 
 ## What is the root URL to your API?
 https://hpbo47pk28.execute-api.us-east-2.amazonaws.com/unicorns/   
