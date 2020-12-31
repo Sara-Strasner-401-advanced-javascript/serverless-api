@@ -4,13 +4,14 @@ const unicornModel = require('./unicorn.schema');
 
 exports.handler = async (event) => {
   const id = event.pathParameters.id;
-  console.log('__event.body__', event.body);
   
   try{
     let data;
     if(id){
       const obj = JSON.parse(event.body);
-      let updatedUnicorn = await unicornModel.update(id, obj);
+      console.log(`This is the body ${obj}`);
+      console.log(`This is the id ${id}`);
+      let updatedUnicorn = await unicornModel.update({id}, obj);
       data = updatedUnicorn;
     } 
     return  {
